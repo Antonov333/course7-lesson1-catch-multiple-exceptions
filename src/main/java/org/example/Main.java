@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         int code = new Random().nextInt();
 
-        try {ItThrows.ThrowMyException(code);}
+        try {ItThrows.throwMyException(code);}
         catch (MyException | RuntimeException x) {
             logger.info(x.getMessage() + " Code=" + code);
         }
